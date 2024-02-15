@@ -28,29 +28,16 @@
     </f:form>
 
     <div class="list">
-        <ul class="pagination">
-            <f:for each="{pagination.allPageNumbers}" as="page">
-                <li class="page-item">
-                    <f:link.action arguments="{currentPageNumber:page}">
-                        {page}
-                    </f:link.action>
-                </li>
-            </f:for>
-        </ul>
-
-        <f:for each="{paginator.paginatedItems}" as="study">
+        <f:if condition="{nextPage}">
+            <f:link.action arguments="{currentPage:studies.nextPageToken}">
+                <f:translate key="label.next" />
+            </f:link.action>
+        </f:if>
+        <f:for each="{studies.studies}" as="study">
             <div>
-                <h3>{study.title}</h3>
-                <p><f:translate key="label.condition" /> {study.condition}</p>
-                <f:format.html>{study.summary}</f:format.html>
+                <strong>{study.protocolSection.identificationModule.briefTitle}</strong>
+                <f:format.html>{study.protocolSection.descriptionModule.briefSummary}</f:format.html>
             </div>
         </f:for>
-
-        <f:link.action arguments="{currentPageNumber:prevPage}" >
-            <f:translate key="label.previous" />
-        </f:link.action>
-        <f:link.action arguments="{currentPageNumber:nextPage}" >
-            <f:translate key="label.next" />
-        </f:link.action>
     </div>
 </f:section>

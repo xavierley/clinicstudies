@@ -6,10 +6,15 @@ namespace Hellipse\XlClinicstudies\Controller;
 
 use \TYPO3\CMS\Core\Utility\GeneralUtility;
 use \Hellipse\XlClinicstudies\Domain\Model\Dto\Search;
+use \Hellipse\XlClinicstudies\Client\ClinicaltrialsClient;
+use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
+
+/*
 use \Hellipse\XlClinicstudies\Domain\Repository\StudyRepository;
 use \TYPO3\CMS\Extbase\Pagination\QueryResultPaginator;
 use \TYPO3\CMS\Core\Pagination\SimplePagination;
 use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
+*/
 
 /**
  * This file is part of the "Clinic Studies" Extension for TYPO3 CMS.
@@ -27,20 +32,20 @@ class StudyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
 
     /**
-     * studyRepository
+     * clinicaltrialsClient
      *
-     * @var StudyRepository
+     * @var ClinicaltrialsClient
      */
-    protected $studyRepository;
+    protected $clinicaltrialsClient;
 
     /**
      * NewsController constructor.
-     * @param StudyRepository $studyRepository
+     * @param ClinicaltrialsClient $clinicaltrialsClient
      */
     public function __construct(
-        StudyRepository $studyRepository
+        ClinicaltrialsClient $clinicaltrialsClient
     ) {
-        $this->studyRepository = $studyRepository;
+        $this->clinicaltrialsClient = $clinicaltrialsClient;
     }
 
     /**
@@ -51,36 +56,19 @@ class StudyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      */
     public function listAction(Search $search = null): \Psr\Http\Message\ResponseInterface
     {
-        if($search === null){
-            $search = GeneralUtility::makeInstance(Search::class);
-            $studies = $this->studyRepository->findAll();
-        } else {
-            $studies = $this->studyRepository->findFilteredStudies($search);
+        $currentPage = '';
+        if($this->request->hasArgument('currentPage')) {
+            $currentPage = $this->request->getArgument('currentPage');
         }
 
-        $itemsPerPage = 1;
-        $currentPageNumber = max(1,
-            $this->request->hasArgument('currentPageNumber')
-            ? (int)$this->request->getArgument('currentPageNumber') : 1
-        );
+        if($search === null){
+            $search = GeneralUtility::makeInstance(Search::class);
+            $studies = $this->clinicaltrialsClient->getAllStudies($currentPage);
+        } else {
+            $studies = $this->clinicaltrialsClient->findFilteredStudies($search, $currentPage);
+        }
 
-        $paginator = new QueryResultPaginator($studies, $currentPageNumber, $itemsPerPage);
-        $pagination = new SimplePagination($paginator);
-
-        $prevPage = $currentPageNumber <= 1 ? 1 : $currentPageNumber - 1;
-        $nextPage = $currentPageNumber < $paginator->getNumberOfPages()
-            ? $currentPageNumber + 1 : $paginator->getNumberOfPages();
-
-        $this->view->assignMultiple(
-            [
-                'prevPage' => $prevPage,
-                'nextPage' => $nextPage,
-                'pagination' => $pagination,
-                'paginator' => $paginator,
-            ]
-        );
-
-        // $this->view->assign('studies', $studies);
+        $this->view->assign('studies', $studies);
         $this->view->assign('search', $search);
 
         return $this->htmlResponse();
