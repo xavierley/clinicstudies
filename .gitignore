@@ -5,3 +5,4 @@
 docker-compose.yml
 Makefile
 yarn.lock
+.idea/
