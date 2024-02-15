@@ -28,11 +28,10 @@
     </f:form>
 
     <div class="list">
-        <f:if condition="{nextPage}">
-            <f:link.action arguments="{currentPage:studies.nextPageToken}">
-                <f:translate key="label.next" />
-            </f:link.action>
-        </f:if>
+        <f:link.action arguments="{currentPage:studies.nextPageToken}">
+            <f:translate key="label.next" />
+        </f:link.action>
+
         <f:for each="{studies.studies}" as="study">
             <div>
                 <strong>{study.protocolSection.identificationModule.briefTitle}</strong>
