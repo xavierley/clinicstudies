@@ -1,0 +1,7 @@
+/var/
+/vendor/
+/node_modules
+/docker
+docker-compose.yml
+Makefile
+yarn.lock
