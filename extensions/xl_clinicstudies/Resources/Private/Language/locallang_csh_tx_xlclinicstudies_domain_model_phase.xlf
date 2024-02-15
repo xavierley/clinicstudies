@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:xl_clinicstudies/Resources/Private/Language/locallang_csh_tx_xlclinicstudies_domain_model_phase.xlf" date="2024-02-14T14:36:58Z" product-name="xl_clinicstudies">
+		<header/>
+		<body>
+			<trans-unit id="title.description" resname="title.description">
+				<source>title</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

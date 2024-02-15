@@ -1,0 +1,46 @@
+{
+    "name": "hellipse/xl-clinicstudies",
+    "type": "typo3-cms-extension",
+    "description": "A tool to look for clinic studies",
+    "authors": [
+        {
+            "name": "Xavier Ley",
+            "role": "Developer"
+        }
+    ],
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "typo3/cms-core": "^12.4"
+    },
+    "require-dev": {
+        "typo3/testing-framework": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hellipse\\XlClinicstudies\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hellipse\\XlClinicstudies\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "typo3-ter/xl-clinicstudies": "self.version"
+    },
+    "config": {
+        "vendor-dir": ".Build/vendor",
+        "bin-dir": ".Build/bin"
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
+        ]
+    },
+    "extra": {
+        "typo3/cms": {
+            "web-dir": ".Build/public",
+            "extension-key": "xl_clinicstudies"
+        }
+    }
+}

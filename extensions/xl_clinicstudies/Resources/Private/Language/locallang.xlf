@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:xl_clinicstudies/Resources/Private/Language/locallang.xlf" date="2024-02-14T14:36:58Z" product-name="xl_clinicstudies">
+		<header/>
+		<body>
+			<trans-unit id="tx_xlclinicstudies_domain_model_study" resname="tx_xlclinicstudies_domain_model_study">
+				<source>Study</source>
+			</trans-unit>
+			<trans-unit id="tx_xlclinicstudies_domain_model_study.description" resname="tx_xlclinicstudies_domain_model_study.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_xlclinicstudies_domain_model_study.title" resname="tx_xlclinicstudies_domain_model_study.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_xlclinicstudies_domain_model_study.title.description" resname="tx_xlclinicstudies_domain_model_study.title.description">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_xlclinicstudies_domain_model_study.tx_xlclinicstudies_condition" resname="tx_xlclinicstudies_domain_model_study.tx_xlclinicstudies_condition">
+				<source>Condition</source>
+			</trans-unit>
+			<trans-unit id="tx_xlclinicstudies_domain_model_study.tx_xlclinicstudies_condition.description" resname="tx_xlclinicstudies_domain_model_study.tx_xlclinicstudies_condition.description">
+				<source>Condition</source>
+			</trans-unit>
+			<trans-unit id="tx_xlclinicstudies_domain_model_study.intervention" resname="tx_xlclinicstudies_domain_model_study.intervention">
+				<source>Intervention</source>
+			</trans-unit>
+			<trans-unit id="tx_xlclinicstudies_domain_model_study.intervention.description" resname="tx_xlclinicstudies_domain_model_study.intervention.description">
+				<source>Intervention</source>
+			</trans-unit>
+			<trans-unit id="tx_xlclinicstudies_domain_model_study.location" resname="tx_xlclinicstudies_domain_model_study.location">
+				<source>Location</source>
+			</trans-unit>
+			<trans-unit id="tx_xlclinicstudies_domain_model_study.location.description" resname="tx_xlclinicstudies_domain_model_study.location.description">
+				<source>Location</source>
+			</trans-unit>
+			<trans-unit id="tx_xlclinicstudies_domain_model_study.status" resname="tx_xlclinicstudies_domain_model_study.status">
+				<source>Status</source>
+			</trans-unit>
+			<trans-unit id="tx_xlclinicstudies_domain_model_study.status.description" resname="tx_xlclinicstudies_domain_model_study.status.description">
+				<source>Status</source>
+			</trans-unit>
+			<trans-unit id="tx_xlclinicstudies_domain_model_study.studystart" resname="tx_xlclinicstudies_domain_model_study.studystart">
+				<source>Studystart</source>
+			</trans-unit>
+			<trans-unit id="tx_xlclinicstudies_domain_model_study.studystart.description" resname="tx_xlclinicstudies_domain_model_study.studystart.description">
+				<source>Studystart</source>
+			</trans-unit>
+			<trans-unit id="tx_xlclinicstudies_domain_model_study.summary" resname="tx_xlclinicstudies_domain_model_study.summary">
+				<source>Summary</source>
+			</trans-unit>
+			<trans-unit id="tx_xlclinicstudies_domain_model_study.summary.description" resname="tx_xlclinicstudies_domain_model_study.summary.description">
+				<source>Summary</source>
+			</trans-unit>
+			<trans-unit id="tx_xlclinicstudies_domain_model_study.description.description" resname="tx_xlclinicstudies_domain_model_study.description.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_xlclinicstudies_domain_model_study.phases" resname="tx_xlclinicstudies_domain_model_study.phases">
+				<source>Phases</source>
+			</trans-unit>
+			<trans-unit id="tx_xlclinicstudies_domain_model_study.phases.description" resname="tx_xlclinicstudies_domain_model_study.phases.description">
+				<source>Phases</source>
+			</trans-unit>
+			<trans-unit id="tx_xlclinicstudies_domain_model_phase" resname="tx_xlclinicstudies_domain_model_phase">
+				<source>Phase</source>
+			</trans-unit>
+			<trans-unit id="tx_xlclinicstudies_domain_model_phase.description" resname="tx_xlclinicstudies_domain_model_phase.description">
+				<source>Phase</source>
+			</trans-unit>
+			<trans-unit id="tx_xlclinicstudies_domain_model_phase.title" resname="tx_xlclinicstudies_domain_model_phase.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_xlclinicstudies_domain_model_phase.title.description" resname="tx_xlclinicstudies_domain_model_phase.title.description">
+				<source>Title</source>
+			</trans-unit>
+
+			<trans-unit id="label.condition">
+				<source>Condition :</source>
+			</trans-unit>
+			<trans-unit id="label.intervention">
+				<source>Intervention :</source>
+			</trans-unit>
+			<trans-unit id="label.location">
+				<source>Location :</source>
+			</trans-unit>
+			<trans-unit id="label.keyword">
+				<source>Other terms :</source>
+			</trans-unit>
+			<trans-unit id="label.status">
+				<source>Recruiting :</source>
+			</trans-unit>
+			<trans-unit id="label.search">
+				<source>Search</source>
+			</trans-unit>
+			<trans-unit id="label.previous">
+				<source>&lt; Previous</source>
+			</trans-unit>
+			<trans-unit id="label.next">
+				<source>Next &gt;</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

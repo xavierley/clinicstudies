@@ -1,0 +1,14 @@
+base: 'http://localhost/'
+languages:
+  -
+    title: Francais
+    enabled: true
+    locale: fr_FR.utf8
+    hreflang: ''
+    base: /
+    websiteTitle: ''
+    navigationTitle: ''
+    flag: gb
+    languageId: 0
+rootPageId: 1
+websiteTitle: ''

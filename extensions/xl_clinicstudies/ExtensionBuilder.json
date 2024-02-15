@@ -1,0 +1,707 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    -71.84911270739246,
+                    -119.99439919021324
+                ]
+            },
+            "name": "Study",
+            "value": {
+                "actionGroup": {
+                    "_default0_index": false,
+                    "_default1_list": true,
+                    "_default2_show": true,
+                    "_default3_new_create": false,
+                    "_default4_edit_update": false,
+                    "_default5_delete": false,
+                    "customActions": [
+                        "search"
+                    ]
+                },
+                "name": "Study",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "6e1246a2-f863-4c02-9c47-3f091fb1b514"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "propertyDescription": "",
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "title",
+                            "propertyType": "String",
+                            "typeSelect": {
+                                "selectboxValues": "",
+                                "renderType": "selectSingle",
+                                "foreignTable": ""
+                            },
+                            "typeText": {
+                                "enableRichtext": false
+                            },
+                            "typeNumber": {
+                                "enableSlider": false,
+                                "steps": 1,
+                                "setRange": false,
+                                "upperRange": 255,
+                                "lowerRange": 0
+                            },
+                            "typeColor": {
+                                "setValuesColorPicker": false,
+                                "colorPickerValues": ""
+                            },
+                            "typeBoolean": {
+                                "renderType": "default",
+                                "booleanValues": ""
+                            },
+                            "typePassword": {
+                                "renderPasswordGenerator": false
+                            },
+                            "size": "",
+                            "minItems": "",
+                            "maxItems": "",
+                            "uid": "9e4d0123-96a5-42d3-8474-fef6a0cdaec7"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "propertyDescription": "",
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "condition",
+                            "propertyType": "String",
+                            "typeSelect": {
+                                "selectboxValues": "",
+                                "renderType": "selectSingle",
+                                "foreignTable": ""
+                            },
+                            "typeText": {
+                                "enableRichtext": false
+                            },
+                            "typeNumber": {
+                                "enableSlider": false,
+                                "steps": 1,
+                                "setRange": false,
+                                "upperRange": 255,
+                                "lowerRange": 0
+                            },
+                            "typeColor": {
+                                "setValuesColorPicker": false,
+                                "colorPickerValues": ""
+                            },
+                            "typeBoolean": {
+                                "renderType": "default",
+                                "booleanValues": ""
+                            },
+                            "typePassword": {
+                                "renderPasswordGenerator": false
+                            },
+                            "size": "",
+                            "minItems": "",
+                            "maxItems": "",
+                            "uid": "59055b89-8137-4efd-8cde-0b62085be71a"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "propertyDescription": "",
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "intervention",
+                            "propertyType": "String",
+                            "typeSelect": {
+                                "selectboxValues": "",
+                                "renderType": "selectSingle",
+                                "foreignTable": ""
+                            },
+                            "typeText": {
+                                "enableRichtext": false
+                            },
+                            "typeNumber": {
+                                "enableSlider": false,
+                                "steps": 1,
+                                "setRange": false,
+                                "upperRange": 255,
+                                "lowerRange": 0
+                            },
+                            "typeColor": {
+                                "setValuesColorPicker": false,
+                                "colorPickerValues": ""
+                            },
+                            "typeBoolean": {
+                                "renderType": "default",
+                                "booleanValues": ""
+                            },
+                            "typePassword": {
+                                "renderPasswordGenerator": false
+                            },
+                            "size": "",
+                            "minItems": "",
+                            "maxItems": "",
+                            "uid": "84eb93db-705d-4280-b5b0-738fbc262d49"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "propertyDescription": "",
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "location",
+                            "propertyType": "String",
+                            "typeSelect": {
+                                "selectboxValues": "",
+                                "renderType": "selectSingle",
+                                "foreignTable": ""
+                            },
+                            "typeText": {
+                                "enableRichtext": false
+                            },
+                            "typeNumber": {
+                                "enableSlider": false,
+                                "steps": 1,
+                                "setRange": false,
+                                "upperRange": 255,
+                                "lowerRange": 0
+                            },
+                            "typeColor": {
+                                "setValuesColorPicker": false,
+                                "colorPickerValues": ""
+                            },
+                            "typeBoolean": {
+                                "renderType": "default",
+                                "booleanValues": ""
+                            },
+                            "typePassword": {
+                                "renderPasswordGenerator": false
+                            },
+                            "size": "",
+                            "minItems": "",
+                            "maxItems": "",
+                            "uid": "0feaa067-2691-4bbc-bb16-e33b291647ce"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "propertyDescription": "",
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "status",
+                            "propertyType": "Boolean",
+                            "typeSelect": {
+                                "selectboxValues": "",
+                                "renderType": "selectSingle",
+                                "foreignTable": ""
+                            },
+                            "typeText": {
+                                "enableRichtext": false
+                            },
+                            "typeNumber": {
+                                "enableSlider": false,
+                                "steps": 1,
+                                "setRange": false,
+                                "upperRange": 255,
+                                "lowerRange": 0
+                            },
+                            "typeColor": {
+                                "setValuesColorPicker": false,
+                                "colorPickerValues": ""
+                            },
+                            "typeBoolean": {
+                                "renderType": "checkboxToggle",
+                                "booleanValues": "Recruiting and not yet recruiting; 1"
+                            },
+                            "typePassword": {
+                                "renderPasswordGenerator": false
+                            },
+                            "size": "",
+                            "minItems": "",
+                            "maxItems": "",
+                            "uid": "a0dcd141-67a9-4b7f-9620-7a0be42d5211"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "propertyDescription": "",
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "studystart",
+                            "propertyType": "Date",
+                            "typeSelect": {
+                                "selectboxValues": "",
+                                "renderType": "selectSingle",
+                                "foreignTable": ""
+                            },
+                            "typeText": {
+                                "enableRichtext": false
+                            },
+                            "typeNumber": {
+                                "enableSlider": false,
+                                "steps": 1,
+                                "setRange": false,
+                                "upperRange": 255,
+                                "lowerRange": 0
+                            },
+                            "typeColor": {
+                                "setValuesColorPicker": false,
+                                "colorPickerValues": ""
+                            },
+                            "typeBoolean": {
+                                "renderType": "default",
+                                "booleanValues": ""
+                            },
+                            "typePassword": {
+                                "renderPasswordGenerator": false
+                            },
+                            "size": "",
+                            "minItems": "",
+                            "maxItems": "",
+                            "uid": "d1a9f309-9ffa-4425-a762-a5a1d09654bc"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "propertyDescription": "",
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "summary",
+                            "propertyType": "Text",
+                            "typeSelect": {
+                                "selectboxValues": "",
+                                "renderType": "selectSingle",
+                                "foreignTable": ""
+                            },
+                            "typeText": {
+                                "enableRichtext": true
+                            },
+                            "typeNumber": {
+                                "enableSlider": false,
+                                "steps": 1,
+                                "setRange": false,
+                                "upperRange": 255,
+                                "lowerRange": 0
+                            },
+                            "typeColor": {
+                                "setValuesColorPicker": false,
+                                "colorPickerValues": ""
+                            },
+                            "typeBoolean": {
+                                "renderType": "default",
+                                "booleanValues": ""
+                            },
+                            "typePassword": {
+                                "renderPasswordGenerator": false
+                            },
+                            "size": "",
+                            "minItems": "",
+                            "maxItems": "",
+                            "uid": "acbb51ab-22fe-4a28-8e1b-af670bdfcf2e"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "propertyDescription": "",
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "description",
+                            "propertyType": "Text",
+                            "typeSelect": {
+                                "selectboxValues": "",
+                                "renderType": "selectSingle",
+                                "foreignTable": ""
+                            },
+                            "typeText": {
+                                "enableRichtext": true
+                            },
+                            "typeNumber": {
+                                "enableSlider": false,
+                                "steps": 1,
+                                "setRange": false,
+                                "upperRange": 255,
+                                "lowerRange": 0
+                            },
+                            "typeColor": {
+                                "setValuesColorPicker": false,
+                                "colorPickerValues": ""
+                            },
+                            "typeBoolean": {
+                                "renderType": "default",
+                                "booleanValues": ""
+                            },
+                            "typePassword": {
+                                "renderPasswordGenerator": false
+                            },
+                            "size": "",
+                            "minItems": "",
+                            "maxItems": "",
+                            "uid": "95c36cf0-b941-4fad-831c-60e208ff91c5"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": [
+                        {
+                            "foreignRelationClass": "",
+                            "lazyLoading": false,
+                            "propertyIsExcludeField": false,
+                            "relationDescription": "",
+                            "relationName": "phases",
+                            "relationType": "zeroToOne",
+                            "relationWire": "[wired]",
+                            "renderType": "selectSingle",
+                            "uid": "8bc5a9d1-8c79-4536-a4e4-ca28db3012bc"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "config": {
+                "position": [
+                    437.78057908121036,
+                    273.7848097621621
+                ]
+            },
+            "name": "Phase",
+            "value": {
+                "actionGroup": {
+                    "_default0_index": false,
+                    "_default1_list": false,
+                    "_default2_show": false,
+                    "_default3_new_create": false,
+                    "_default4_edit_update": false,
+                    "_default5_delete": false,
+                    "customActions": []
+                },
+                "name": "Phase",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": false,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "d0169ad3-b96e-4abd-b4fa-3d966f20e241"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "propertyDescription": "",
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "title",
+                            "propertyType": "String",
+                            "typeSelect": {
+                                "selectboxValues": "",
+                                "renderType": "selectSingle",
+                                "foreignTable": ""
+                            },
+                            "typeText": {
+                                "enableRichtext": false
+                            },
+                            "typeNumber": {
+                                "enableSlider": false,
+                                "steps": 1,
+                                "setRange": false,
+                                "upperRange": 255,
+                                "lowerRange": 0
+                            },
+                            "typeColor": {
+                                "setValuesColorPicker": false,
+                                "colorPickerValues": ""
+                            },
+                            "typeBoolean": {
+                                "renderType": "default",
+                                "booleanValues": ""
+                            },
+                            "typePassword": {
+                                "renderPasswordGenerator": false
+                            },
+                            "size": "",
+                            "minItems": "",
+                            "maxItems": "",
+                            "uid": "a34dcdca-6ae7-4e5a-9c19-225c33493b7f"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [],
+        "description": "A tool to look for clinic studies",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "generateDocumentationTemplate": false,
+            "generateEditorConfig": true,
+            "generateEmptyGitRepository": true,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "12.4",
+            "version": "0.0.1"
+        },
+        "extensionKey": "xl_clinicstudies",
+        "name": "Clinic Studies",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "Hellipse",
+                "email": "xavierley@gmail.com",
+                "name": "Xavier Ley",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [],
+        "vendorName": "Hellipse"
+    },
+    "wires": [
+        {
+            "src": {
+                "moduleId": 0,
+                "moduleName": "Study",
+                "terminal": "relationWire_0",
+                "uid": "reactflow__edge-dndnode_0relation-dndnode_0-0-dndnode_1customModelNode-dndnode_1"
+            },
+            "tgt": {
+                "moduleId": 1,
+                "moduleName": "Phase",
+                "terminal": "SOURCES",
+                "uid": "dndnode_0"
+            }
+        }
+    ],
+    "nodes": [
+        {
+            "id": "dndnode_0",
+            "type": "customModel",
+            "position": {
+                "x": -71.84911270739246,
+                "y": -119.99439919021324
+            },
+            "data": {
+                "label": "Study",
+                "objectType": "",
+                "isAggregateRoot": true,
+                "enableSorting": false,
+                "addDeletedField": true,
+                "addHiddenField": true,
+                "addStarttimeEndtimeFields": true,
+                "enableCategorization": false,
+                "description": "",
+                "mapToExistingTable": "",
+                "extendExistingModelClass": "",
+                "actions": {
+                    "actionIndex": false,
+                    "actionList": true,
+                    "actionShow": true,
+                    "actionNewCreate": false,
+                    "actionEditUpdate": false,
+                    "actionDelete": false
+                },
+                "customActions": [
+                    "search"
+                ],
+                "properties": [
+                    {
+                        "name": "title",
+                        "type": "String",
+                        "description": "",
+                        "isRequired": true,
+                        "isNullable": false,
+                        "isExcludeField": false,
+                        "isl10nModeExlude": false
+                    },
+                    {
+                        "name": "condition",
+                        "type": "String",
+                        "description": "",
+                        "isRequired": false,
+                        "isNullable": false,
+                        "isExcludeField": false,
+                        "isl10nModeExlude": false
+                    },
+                    {
+                        "name": "intervention",
+                        "type": "String",
+                        "description": "",
+                        "isRequired": false,
+                        "isNullable": false,
+                        "isExcludeField": false,
+                        "isl10nModeExlude": false
+                    },
+                    {
+                        "name": "location",
+                        "type": "String",
+                        "description": "",
+                        "isRequired": false,
+                        "isNullable": false,
+                        "isExcludeField": false,
+                        "isl10nModeExlude": false
+                    },
+                    {
+                        "name": "status",
+                        "type": "Boolean",
+                        "description": "",
+                        "isRequired": false,
+                        "isNullable": false,
+                        "isExcludeField": false,
+                        "isl10nModeExlude": false,
+                        "typeBoolean": {
+                            "renderType": "checkboxToggle",
+                            "booleanValues": "Recruiting and not yet recruiting; 1"
+                        }
+                    },
+                    {
+                        "name": "studystart",
+                        "type": "Date",
+                        "description": "",
+                        "isRequired": false,
+                        "isNullable": false,
+                        "isExcludeField": false,
+                        "isl10nModeExlude": false
+                    },
+                    {
+                        "name": "summary",
+                        "type": "Text",
+                        "description": "",
+                        "isRequired": false,
+                        "isNullable": false,
+                        "isExcludeField": false,
+                        "isl10nModeExlude": false,
+                        "typeText": {
+                            "enableRichtext": true
+                        }
+                    },
+                    {
+                        "name": "description",
+                        "type": "Text",
+                        "description": "",
+                        "isRequired": false,
+                        "isNullable": false,
+                        "isExcludeField": false,
+                        "isl10nModeExlude": false,
+                        "typeText": {
+                            "enableRichtext": true
+                        }
+                    }
+                ],
+                "relations": [
+                    {
+                        "foreignRelationClass": "",
+                        "lazyLoading": false,
+                        "excludeField": true,
+                        "relationDescription": "",
+                        "relationName": "phases",
+                        "relationType": "zeroToOne",
+                        "relationWire": "",
+                        "renderType": "",
+                        "uid": "905857860343"
+                    }
+                ]
+            },
+            "dragHandle": ".drag-handle",
+            "draggable": true,
+            "width": 300,
+            "height": 707,
+            "selected": false,
+            "positionAbsolute": {
+                "x": -71.84911270739246,
+                "y": -119.99439919021324
+            },
+            "dragging": false
+        },
+        {
+            "id": "dndnode_1",
+            "type": "customModel",
+            "position": {
+                "x": 437.78057908121036,
+                "y": 273.7848097621621
+            },
+            "data": {
+                "label": "Phase",
+                "objectType": "",
+                "isAggregateRoot": false,
+                "enableSorting": false,
+                "addDeletedField": true,
+                "addHiddenField": true,
+                "addStarttimeEndtimeFields": true,
+                "enableCategorization": false,
+                "description": "",
+                "mapToExistingTable": "",
+                "extendExistingModelClass": "",
+                "actions": {
+                    "actionIndex": false,
+                    "actionList": false,
+                    "actionShow": false,
+                    "actionNewCreate": false,
+                    "actionEditUpdate": false,
+                    "actionDelete": false
+                },
+                "customActions": [],
+                "properties": [
+                    {
+                        "name": "title",
+                        "type": "String",
+                        "description": "",
+                        "isRequired": false,
+                        "isNullable": false,
+                        "isExcludeField": false,
+                        "isl10nModeExlude": false
+                    }
+                ],
+                "relations": []
+            },
+            "dragHandle": ".drag-handle",
+            "draggable": true,
+            "width": 300,
+            "height": 352,
+            "selected": true,
+            "positionAbsolute": {
+                "x": 437.78057908121036,
+                "y": 273.7848097621621
+            },
+            "dragging": false
+        }
+    ],
+    "edges": [
+        {
+            "source": "dndnode_0",
+            "sourceHandle": "relation-dndnode_0-0",
+            "target": "dndnode_1",
+            "targetHandle": "customModelNode-dndnode_1",
+            "id": "reactflow__edge-dndnode_0relation-dndnode_0-0-dndnode_1customModelNode-dndnode_1"
+        }
+    ],
+    "storagePath": "\/app\/extensions\/",
+    "log": {
+        "last_modified": "2024-02-14 02:36",
+        "extension_builder_version": "v12.0.0-alpha.6",
+        "be_user": " (1)"
+    }
+}

@@ -1,0 +1,56 @@
+<f:layout name="General" />
+
+<f:section name="content">
+
+    <f:form name="search" object="{search}" >
+        <div class="condition">
+            <label for="condition"><f:translate key="label.condition" /></label>
+            <f:form.textfield property="condition" id="condition" />
+        </div>
+        <div class="intervention">
+            <label for="intervention"><f:translate key="label.intervention" /></label>
+            <f:form.textfield property="intervention" id="intervention" />
+        </div>
+        <div class="location">
+            <label for="location"><f:translate key="label.location" /></label>
+            <f:form.textfield property="location" id="location" />
+        </div>
+        <div class="keyword">
+            <label for="keyword"><f:translate key="label.keyword" /></label>
+            <f:form.textfield property="keyword" id="keyword" />
+        </div>
+        <div class="status">
+            <label for="status"><f:translate key="label.status" /></label>
+            <f:form.checkbox property="status" id="status" value="1" />
+        </div>
+
+        <f:form.submit value="<f:translate key='label.search' />" />
+    </f:form>
+
+    <div class="list">
+        <ul class="pagination">
+            <f:for each="{pagination.allPageNumbers}" as="page">
+                <li class="page-item">
+                    <f:link.action arguments="{currentPageNumber:page}">
+                        {page}
+                    </f:link.action>
+                </li>
+            </f:for>
+        </ul>
+
+        <f:for each="{paginator.paginatedItems}" as="study">
+            <div>
+                <h3>{study.title}</h3>
+                <p><f:translate key="label.condition" /> {study.condition}</p>
+                <f:format.html>{study.summary}</f:format.html>
+            </div>
+        </f:for>
+
+        <f:link.action arguments="{currentPageNumber:prevPage}" >
+            <f:translate key="label.previous" />
+        </f:link.action>
+        <f:link.action arguments="{currentPageNumber:nextPage}" >
+            <f:translate key="label.next" />
+        </f:link.action>
+    </div>
+</f:section>

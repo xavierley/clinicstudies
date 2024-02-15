@@ -1,0 +1,36 @@
+<<f:layout name="General" />
+
+<f:section name="content">
+
+    <f:debug>{_all}</f:debug>
+
+    <f:form name="search" object="{search}" >
+        <div class="condition">
+            <label for="condition">Condition :</label>
+            <f:form.textfield property="condition" id="condition" />
+        </div>
+        <div class="intervention">
+            <label for="intervention">Intervention :</label>
+            <f:form.textfield property="intervention" id="intervention" />
+        </div>
+        <div class="location">
+            <label for="location">Location :</label>
+            <f:form.textfield property="location" id="location" />
+        </div>
+        <div class="keyword">
+            <label for="keyword">Other terms :</label>
+            <f:form.textfield property="keyword" id="keyword" />
+        </div>
+        <div class="status">
+            <label for="status">Recruiting :</label>
+            <f:form.checkbox property="status" id="status" value="1" />
+        </div>
+        <div class="studystart">
+            <label for="studystart">Studies started after :</label>
+            <f:form.textfield property="studystart" id="studystart" type="date" />
+        </div>
+
+        <f:form.submit value="Search" />
+    </f:form>
+
+</f:section>

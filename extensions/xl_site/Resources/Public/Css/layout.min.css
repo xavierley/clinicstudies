@@ -1,0 +1,10 @@
+.content {
+    display: flex;
+}
+.left-column {
+    width: 30%;
+    padding-right: 2%;
+}
+.main-column {
+    width: 68%;
+}
