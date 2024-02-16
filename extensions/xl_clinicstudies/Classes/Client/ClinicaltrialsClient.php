@@ -20,7 +20,7 @@ final class ClinicaltrialsClient
     /**
      *
      */
-    public function getAllStudies(string $currentPageToken): array
+    public function getAllStudies(string $currentPageToken = ''): array
     {
         $additionalOptions = [
             'headers' => ['Cache-Control' => 'no-cache'],
@@ -48,7 +48,7 @@ final class ClinicaltrialsClient
      */
     public function findFilteredStudies(
         \Hellipse\XlClinicstudies\Domain\Model\Dto\Search $search,
-        string $currentPageToken
+        string $currentPageToken = ''
     ): array
     {
         $additionalOptions = [
